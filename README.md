@@ -9,7 +9,7 @@ This is a full-featured authentication app built with **Next.js**, **TypeScript*
 
 ---
 
-## 📌 Features
+## Features
 
 - User Signup with Full Name, Email, and Password
 - Validation using React Hook Form
