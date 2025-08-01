@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 
 const Vertify = () => {
-  const [otp, setOtp] = useState(["", "", "", "","", ""]);
+  const [otp, setOtp] = useState(["", "", "", ""]);
   const [timeLeft, setTimeLeft] = useState(30);
   const [resendAvailable, setResendAvailable] = useState(false);
   const [loading, setLoading] = useState(false);
@@ -46,6 +46,9 @@ const Vertify = () => {
     setError("");
 
     const OTP = otp.join("");
+    console.log(OTP)
+    console.log("Email:", email);
+    
     try {
       const res = await fetch(
         "https://akil-backend.onrender.com/verify-email",

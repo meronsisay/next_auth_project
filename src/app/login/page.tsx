@@ -31,7 +31,7 @@ const LoginPage = () => {
     if (res?.error) {
       setError("root", {
         type: "manual",
-        message: res.error || "Invalid email or password.",
+        message: "Invalid email or password.",
       });
     } else {
       router.push("/");
